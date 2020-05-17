@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3>编辑条目</h3>
+<form method="POST">
+    Name<input type="text" name="title" autocomplete="off" required value="{{movie.title}}">
+    Year<input type="texy" name="year" autocomplete="off" required value="{{movie.year}}">
+    <input class="btn" type="submit" name="submit" value="UPDATE">
+</form>
+{% endblock %}
